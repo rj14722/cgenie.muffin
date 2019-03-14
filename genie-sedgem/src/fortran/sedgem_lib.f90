@@ -92,8 +92,9 @@ MODULE sedgem_lib
   logical::par_sed_huelse2017_redox                              ! Corg degradation rates redox dependent?
   logical::par_sed_huelse2017_P_cycle                            ! Include explicit P-cycle in OMEN-SED?
   logical::par_sed_huelse2017_remove_impl_sulALK                 ! Remove implicit Alk associated with buried sulf-OM? / no permanent ALk gain?
-  logical::par_sed_huelse2017_sim_P_loss                         ! Simulate ocean Porg loss with buried sulf-OM?
-  NAMELIST /ini_sedgem_nml/par_sed_huelse2017_redox,par_sed_huelse2017_P_cycle,par_sed_huelse2017_remove_impl_sulALK,par_sed_huelse2017_sim_P_loss
+  logical::par_sed_huelse2017_sulf_P_loss                        ! Simulate ocean Porg loss just with buried sulf-OM?
+  logical::par_sed_huelse2017_P_open                         	 ! Bury P in OM (and use weathering to restore it)?
+  NAMELIST /ini_sedgem_nml/par_sed_huelse2017_redox,par_sed_huelse2017_P_cycle,par_sed_huelse2017_remove_impl_sulALK,par_sed_huelse2017_sulf_P_loss,par_sed_huelse2017_P_open
   REAL::par_sed_huelse2017_k1                                    ! labile degradation rate constant, units of 1/yr
   REAL::par_sed_huelse2017_k2                                    ! refractory degradation rate constant, units of 1/yr
   REAL::par_sed_huelse2017_k2_order                              ! k2 = k1/par_sed_huelse2017_k2_order

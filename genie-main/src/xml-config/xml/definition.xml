@@ -6533,9 +6533,13 @@
 			<value datatype="boolean">.true.</value>
                         <description>Remove implicit Alk associated with buried sulf-OM?</description>
                     </param>
-                    <param name="par_sed_huelse2017_sim_P_loss">
+                    <param name="par_sed_huelse2017_sulf_P_loss">
 			<value datatype="boolean">.false.</value>
-                        <description>Simulate ocean Porg loss with buried sulf-OM?</description>
+                        <description>Simulate ocean Porg loss just with buried sulf-OM?</description>
+                    </param>
+                    <param name="par_sed_huelse2017_P_open">
+			<value datatype="boolean">.false.</value>
+                        <description>Bury P in OM (and use weathering to restore it)?</description>
                     </param>
                     <param name="par_sed_huelse2017_k1">
 			<value datatype="real">0.0065</value>
